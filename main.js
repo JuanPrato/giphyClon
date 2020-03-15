@@ -9,7 +9,7 @@ function buscarDatos(e) {
     const tipo = document.querySelector('input[type=radio]:checked').id;
 
     if(busqueda !== ""){
-        fetch('http://api.giphy.com/v1/'+ tipo +'/search?q='+ busqueda +'&api_key=b1yMcAQbjJdQIk1bebiFDg1k43vP3amC&limit=5')
+        fetch('https://api.giphy.com/v1/'+ tipo +'/search?q='+ busqueda +'&api_key=b1yMcAQbjJdQIk1bebiFDg1k43vP3amC&limit=5')
         .then(function(informacion) {
             return informacion.json();
         }).then(function(informacion) {
