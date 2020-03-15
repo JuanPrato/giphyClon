@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="contenedor bg-primary">
+    <h1 class="titulo">GIPHY CLON</h1>
+    <form id="form" class="contenedor bg-claro br-small">
+        <input type="text" name="busqueda" id="busqueda" class="search-bar" placeholder="Ingrese que quiere buscar" autocomplete="off">
+        <div class="inferior">
+            <div class="radios">
+                <div class="radio">
+                    <label for="gifs">GIF</label>
+                    <input type="radio" name="tipo" id="gifs" checked>
+                </div>
+                <div class="radio">
+                    <label for="stickers">STICKER</label>
+                    <input type="radio" name="tipo" id="stickers">
+                </div>
+            </div><!--RADIOS-->
+            <input type="submit" id="buscar" value="BUSCAR" class="btn bg-secundary">
+        </div>
+    </form>
+    <div class="gifs contenedor bg-claro br-small" id="resultados">
+    
+    </div> <!--gifs-->
+    <script src="main.js"></script>
+</body>
+</html>
